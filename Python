@@ -1,0 +1,47 @@
+Et voici quelques lignes de code que j'ai réalisé durant mes années de spécialité NSI : 
+
+Algorithme de recherche : 
+from random import*
+import time
+
+def plusgrand(l):
+    n=int(input("entrez la taille de la liste : "))
+    a = 0
+    deb = time.time()
+    for i in range(n):
+        l.append(randint(a, a+10))
+        a = a +10
+    end = time.time()
+    print(end-deb)
+    return l
+
+def recherche(L,x):
+    deb=time.clock()
+    for i in range(len(L)):
+        if x==L[i]:
+            return True
+    end=time.clock()
+    print(end-deb)
+    return False
+
+#programme principal
+l=[]
+print(plusgrand(l))
+x = int(input("entrez un nombre : "))
+print(recherche(l, x))
+
+
+
+Conversion d'une lettre en hexadecimal : 
+def hexa(n) :
+    return hex(n)[2:]
+
+def f():
+    x = str(input("Veuillez entrez un texte : "))
+    for i in x:
+        t=ord(i)
+        y=hexa(t)
+        print(y)
+f()
+
+
