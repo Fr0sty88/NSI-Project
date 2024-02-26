@@ -1,0 +1,277 @@
+En classe de Première, nous avions étudier les bases du langage HTML, et avons pu réalisé un site par nos moyens. 
+Voici mon code pour la partie HTML : 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Présentation Albert Einstein </title>
+        <link href="E:\NSI\Projet du site\fichier css pour le site .css" rel="stylesheet"  type="text/css"/>
+    </head>
+
+    
+    
+    
+    <body>
+      
+        <h1>Présentation Albert Einstein </h1>
+        
+        <h2> Rudy DIMINO 1°5</h2>
+        
+        <div class="entete">
+            <div class="entetegauche">
+                <h5>Image connue de Albert Einstein :</h5>
+                <img src="E:\NSI\Projet du site\AE.jpg" alt="AE" >
+            </div>
+
+
+            <div class="entetecentre">
+                <h5>Ce qu'a accompli l'ingénieur :</h5>
+                <ul type="circle" >
+                    <li> <h5>La simplification de la fameuse formule "E=mc²" </h5> </li>
+                    <h4>E = mc² démontre qu’un corps au repos possède une énergie E relative à la vitesse de la lumière dans le vide et à sa masse.</h4>
+                    <li><h5>Le mouvement brownien</h5> </li>
+                    <h4>En 1905, le célèbre physicien expose une théorie dans laquelle il prouve l’existence des molécules en effectuant des expériences avec l’eau. Le mouvement imprévisible du liquide est ce que l’on appelle le mouvement brownien. </h4>
+                    <li><h5>Appareil de correction auditive</h5></li>
+                    <h4> Avec son élève Léo Szilárd ils mettent au point l’appareil de correction auditive. Le principe de cette invention se base toujours sur sa théorie de la relativité restreinte. Cet appareil fait partie des quarante brevets déposés avec son ancien élève. (Voir image ci-contre)</h4>
+                </ul>
+            </div>
+
+
+            <div class="entetedroite">
+                <h5>Le réfrégirateur de Albert Einstein :</h5>
+                <img src="E:\NSI\Projet du site\frigo.jpg" alt="frigo de Einstein">
+            </div>
+        </div>
+
+        <div class="corps">
+            <div class="corpsgauche">
+                <h5>Pour en savoir plus sur ce GÉNIE : </h5>
+                <ol type="1">
+                    <li> <a href="https://fr.wikipedia.org/wiki/Albert_Einstein" > Tout d'abord avec un lien qui mène vers le site de Wikipédia, et ici vous pourrez en apprendre plus sur ce dernier :</a></li>
+                    <li>Il y a aussi une vidéo qui explique bien la vie de cet ingénieur. (Video ci-contre) </li>  
+                    <li>Et enfin un film dédié à sa vie et ses découvertes qui ont révolutionnées le monde, en voici la bande d'annonce:</li> 
+                    <video src="E:\NSI\Projet du site\BA einstein.mp4" controls width="250" height="150">
+
+                    </video>             
+                </ol>
+            </div>
+
+
+            <div class="corpsdroite">
+                <h5>Vidéo explicative de sa vie : </h5>
+                <video src="E:\NSI\Projet du site\génie.mp4" controls width="250" height="150" > 
+                </video>
+                <h5>Einstein expliqué aux enfants :</h5>
+                <video src="E:\NSI\Projet du site\vidéoAE.mp4" controls width="250" height="150" > 
+                </video>
+            </div>
+        </div>
+
+
+        <div class="Bas de page">
+            <h3>Merci pour votre lecture ---------------------------------------------------------------------- Lycée Saint-Joseph Carnolès</h3>
+        </div>
+        
+    </body>
+
+</html>
+
+Puis la partie CSS : 
+/* Mon CSS perso */
+
+
+ 
+body {
+    width:1000px;
+    margin: 0px auto;	/* marge extérieure 0 en vertical et auto en horizontal : donc centré horizontalement */
+    background-image: url(https://i.f1g.fr/media/ext/299x250/image3.evene.fr/files/celebrity/307.jpg);
+    background-position: center;
+    border : solid 1px transparent;
+ }
+ 
+ h1 {
+    width:1000px;
+    margin: 10px auto;
+    padding : 10px;
+    font-family : fantasy;
+    color : #000000;
+    font-size : 2em;	
+    text-align: center;
+    background-color: #FFFFFF;
+    border : solid 1px #000000;
+ }
+ 
+ h2 {
+    width:1000px;
+    margin: 10px auto;
+    padding : 10px;
+    font-family : cursive;
+    color : #FFFFFF;
+    font-size : 1.5em;	
+    text-align: left;
+    background-color: #000000;
+    border : solid 1px #FFFFFF;
+ }
+ 
+ h3 {
+    width:1000px;
+    margin: 10px auto;
+    padding : 10px;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color : #FFFFFF;
+    font-size : 1.5em;	
+    text-align: right;
+    background-color: #000000; 
+    border : solid 1px #FFFFFF;
+    
+    }
+    
+    
+    
+ 
+   
+ .entete {
+    /* A completer */
+    
+  
+    border : solid 2px #000000;
+    background-image: url(file:///E:/NSI/Projet%20du%20site/e=mc.png);
+    position : relative ;
+   
+    
+    }
+ 
+ .entetegauche {
+    /* A completer */
+    
+ 
+    border : solid 5px #000000;
+    background-color: #FFFFFF;
+    height : 348px;  
+    width: 250px;
+    margin: 10px;
+    position: absolute;
+    top: 0%;
+    
+    }
+ 
+ .entetecentre {
+     /* A completer */
+    width: 425px;
+    height: 500px;
+    margin: 10px auto;
+    font-family : Arial, Helvetica, sans-serif;
+    color : #000000;
+    font-size : 17px;	
+    position: static;
+    background-color: #ffffff;
+    border : solid 1px #000000;
+    text-align: center;
+  
+    
+
+ 
+    }
+ 
+ .entetedroite {
+     /* A completer */
+     box-align: right  ;
+     text-align: center;
+     border : solid 5px #000000; 
+     background-color: #FFFFFF;
+     height : 350px;  
+     width: 250px;
+     margin: 10px;
+     position: absolute;
+     left: 715px;
+     top: 0%;
+    }
+ 
+ .corps {
+     /* A completer */
+     
+ 
+    border : solid 5px #000000;
+    background-image: url(https://i.pinimg.com/originals/81/4b/55/814b557ad1c548125aef33215b8de002.jpg);
+    position: relative;
+   
+ 
+    }
+ 
+ .corpsgauche {
+     /* A completer */
+     
+ 
+    border : solid 2px #000000;
+    background-color: #FFFFFF;
+    position: static;
+    height : 355px;  
+    width: 650px;
+    font-family : Arial, Helvetica, sans-serif;    
+    color : #000000;
+    font-size : 17px;	
+    margin: 10px;
+    text-align: center;
+    
+    
+    
+ 
+   }
+ 
+ .corpsdroite {
+     /* A completer */
+     
+ 
+    border : solid 2px #000000;
+    background-color: #5f5f5f;
+    height : 360px;  
+    width: 265px;
+    margin: 10px;
+    left: 700px;
+    position: absolute;
+    box-align: right  ;
+    text-align: right;
+    top: 0%;
+    text-align: center;
+   
+    
+ }
+ 
+ 
+ h4
+{
+font-size: 15px;
+}
+
+h5
+{
+text-decoration: underline;
+font-size: 20px;
+}
+ 
+ 
+ 
+ 
+ 
+ /* NE PAS MODIFIER CE QUI SUIT */
+ .espace {
+     clear : both;
+ }
+ 
+ img {
+ width:100%;	
+ }
+ 
+ ol, ul {
+ padding-left : 20px;
+ }
+ 
+ * {
+  margin:0;
+  padding:0;
+  font-weight : 900;
+ }
+
+
+Grâce à ce devoir j'ai pu découvrir le monde du langage HTML, qui me plait fortement ! 
